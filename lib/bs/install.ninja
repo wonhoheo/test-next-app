@@ -1,0 +1,32 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o App.cmi : cp ../bs/src/App.cmi
+o App.cmj : cp ../bs/src/App.cmj
+o App.cmt : cp ../bs/src/App.cmt
+o App.res : cp ../../src/App.res
+o App.resi : cp ../../src/App.resi
+o App.cmti : cp ../bs/src/App.cmti
+o Test.cmi : cp ../bs/src/Test.cmi
+o Test.cmj : cp ../bs/src/Test.cmj
+o Test.cmt : cp ../bs/src/Test.cmt
+o Test.res : cp ../../src/Test.res
+o Index.cmi : cp ../bs/src/Index.cmi
+o Index.cmj : cp ../bs/src/Index.cmj
+o Index.cmt : cp ../bs/src/Index.cmt
+o Index.res : cp ../../src/Index.res
+o Example.cmi : cp ../bs/src/Example.cmi
+o Example.cmj : cp ../bs/src/Example.cmj
+o Example.cmt : cp ../bs/src/Example.cmt
+o Example.res : cp ../../src/Example.res
+o Next.cmi : cp ../bs/src/bindings/Next.cmi
+o Next.cmj : cp ../bs/src/bindings/Next.cmj
+o Next.cmt : cp ../bs/src/bindings/Next.cmt
+o Next.res : cp ../../src/bindings/Next.res
+o MainLayout.cmi : cp ../bs/src/layouts/MainLayout.cmi
+o MainLayout.cmj : cp ../bs/src/layouts/MainLayout.cmj
+o MainLayout.cmt : cp ../bs/src/layouts/MainLayout.cmt
+o MainLayout.res : cp ../../src/layouts/MainLayout.res
+build install.stamp : touch App.cmi App.cmj Test.cmi Test.cmj Index.cmi Index.cmj Example.cmi Example.cmj Next.cmi Next.cmj MainLayout.cmi MainLayout.cmj 

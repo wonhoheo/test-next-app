@@ -1,7 +1,8 @@
 import '../styles/globals.css'
+import ResApp from '../src/App.mjs'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp(props) {
+  return <ResApp {...props} />
 }
 
 export default MyApp

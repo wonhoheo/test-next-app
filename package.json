@@ -2,10 +2,14 @@
   "name": "test-next-app",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next",
+    "build": "rescript && next build",
+    "now-build": "rescript && next build",
+    "export": "next export",
+    "start": "next start -p $PORT",
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:start": "rescript build -w"
   },
   "dependencies": {
     "next": "12.0.8",
@@ -13,7 +17,14 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@rescript/react": "^0.10.3",
+    "@ryyppy/rescript-promise": "^2.1.0",
+    "autoprefixer": "^10.4.2",
     "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8"
+    "eslint-config-next": "12.0.8",
+    "next-transpile-modules": "^9.0.0",
+    "postcss": "^8.4.5",
+    "rescript": "^9.1.4",
+    "tailwindcss": "^3.0.15"
   }
 }
