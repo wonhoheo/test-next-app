@@ -1,1 +1,0 @@
-{ "dirs" : [ "src" , "src/bindings" , "src/layouts" ] , "pkgs" : [ [ "@ryyppy/rescript-promise" , "/Users/user/repository/test-next-app/node_modules/@ryyppy/rescript-promise" ] , [ "@rescript/react" , "/Users/user/repository/test-next-app/node_modules/@rescript/react" ] ] , "generated" : [] }
