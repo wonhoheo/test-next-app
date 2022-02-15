@@ -22,9 +22,14 @@ let default = (props: props): React.element => {
 
   switch router.route {
   | "/examples" =>
-    <MainLayout>
+    <SimEstLayout>
       <h1 className="font-bold"> {React.string("Examples Section")} </h1> <div> content </div>
-    </MainLayout>
-  | _ => <MainLayout> content </MainLayout>
+    </SimEstLayout>
+  | _ => <SimEstLayout> 
+          <Swr.SwrConfigProvider
+            value={Swr.swrConfiguration(~refreshInterval=3000, ~loadingTimeout=1000, ())}>
+          content 
+          </Swr.SwrConfigProvider>
+          </SimEstLayout>
   }
 }

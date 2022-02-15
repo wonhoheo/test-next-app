@@ -11,11 +11,15 @@
   },
   "bs-dependencies": [
     "@rescript/react",
-    "@ryyppy/rescript-promise"
+    "@ryyppy/rescript-promise",
+    "rescript-swr"
   ],
   "package-specs": {
     "module": "es6",
     "in-source": true
   },
+  "ppx-flags": [
+    ["@greenlabs/res-tailwindcss/ppx", "--path styles/.tailwind.css"]
+  ],
   "suffix": ".mjs"
 }
